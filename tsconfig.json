@@ -1,6 +1,26 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
+		"paths": {
+			"@components/*": [
+				"./src/components/*"
+			],
+			"@store/*": [
+				"./src/store/*"
+			],
+			"@hooks/*": [
+				"./src/hooks/*"
+			],
+			"@src/*": [
+				"./src/*"
+			],
+		},
+		"plugins": [
+			{
+				"name": "typescript-plugin-css-modules"
+			}
+		],
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +38,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+	"noImplicitAny": true,
+	"alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
   },
-  "include": [
-    "src"
-  ]
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules",
+		".vscode"
+	]
 }

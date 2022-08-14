@@ -1,0 +1,29 @@
+.dialog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.dialog-wrapper {
+	background-color: #ffffff;
+	border: 0.1em solid #949494;
+}
+.dialog-header {
+	text-align: center;
+	background-color: #1976d2;
+	color: #ffffff;
+	padding: 1em;
+	font-size: 1rem;
+}
+.dialog-content {
+	padding: 2em;
+	font-size: 1rem;
+}
+.dialog-footer {
+	text-align: right;
+	padding: 1em;
+}
+.dialog-footer > button {
+	margin-right: 0.5em;
+}
